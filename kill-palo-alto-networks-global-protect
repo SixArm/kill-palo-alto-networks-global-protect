@@ -17,9 +17,29 @@
 #     account for normal work, and a separate user account for demos.
 #
 # This implementation uses `launchctl` to `unload the code,
-# then kills the related processes.
-#
+# then kills all processes named GlobalProtect and PanGPS.
+##
+set -uf
+
 launchctl unload -w /Library/LaunchAgents/com.paloaltonetworks.gp.pangpa.plist
 launchctl unload -w /Library/LaunchAgents/com.paloaltonetworks.gp.pangps.plist
-sudo killall GlobalProtect
-sudo killall PanGPS
+
+while true; do
+  sudo killall GlobalProtect || break
+  sleep 1
+done
+
+while true; do
+  sudo killall -9 GlobalProtect || break
+  sleep 1
+done
+
+while true; do
+  sudo killall PanGPS || break
+  sleep 1
+done
+
+while true; do
+  sudo killall -9 PanGPS || break
+  sleep 1
+done
