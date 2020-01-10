@@ -14,12 +14,12 @@ The start function uses `launchctl` to reload all GlobalProtect with all its dep
 
 ## Installing
 
-Simply download the raw file and save it to a convenient location
+Simply download the raw [gplaunch](https://raw.githubusercontent.com/ips-yes/kill-palo-alto-networks-global-protect/master/gplaunch) shell script file and save it to a convenient location
 on your hard drive.
 
 ## Launching the Script
 
-Simply execute `gplaunch` from the command line with the appropriate parameters.
+Execute `gplaunch` from the command line with the appropriate parameters.
 
 ```
 Usage: gplaunch [-k] [-s]
@@ -30,5 +30,5 @@ Usage: gplaunch [-k] [-s]
 
 ## Authors
 
-* **Joel Parker Henderson** - *Initial work* - [SixArm software] (https://github.com/SixArm)
-* **Danny Aponte** - *Contributor* - [Intelligent Product Solutions] (https://github.com/ips-yes)
+* **Joel Parker Henderson** - *Initial work* - [SixArm software](https://github.com/SixArm)
+* **Danny Aponte** - *Contributor* - [Intelligent Product Solutions](https://github.com/ips-yes)
